@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canecas</title>
+    <link rel="shortcut icon" href="./Images/Sélo (16 x 16 cm).png" type="image/x-icon">
+    <link rel="stylesheet" href="seloestilo.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div style="margin-bottom: 320px;">
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img src="./Images/Imagem cab.png" alt="logo" height="120" width="100">
+            </a>
+
+            <button id="btnLogin" class="btn-login" onclick="verificarLogin()">Login</button>
+
+            <nav class="navbar">
+                <a href="#">Início</a>
+                <a href="#perso">Personalizados</a>
+                <a href="#Model">Modelos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#Contato">Contato</a>
+            </nav>
+
+            <div class="icons">
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar..." id="pesquisa">
+                    <img src="https://img.icons8.com/ios/30/ffffff/search--v1.png"
+                        onclick="abrirBusca()" style="cursor:pointer;">
+                </div>
+                <img width="30" height="30" src="https://img.icons8.com/dotty/30/ffffff/shopping-cart.png"
+                    alt="shopping-cart" />
+                <a href="https://wa.me/5541988461590?text=Oi%20quero%20fazer%20um%20pedido." target="_blank">
+                    <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/ffffff/whatsapp--v1.png"
+                        alt="whatsapp--v1" />
+                </a>
+                <a href="https://www.instagram.com/selo_unico25/">
+                    <img width="30" height="30" src="https://img.icons8.com/pulsar-line/30/ffffff/instagram-new.png"
+                        alt="instagram-new" />
+                </a>
+            </div>
+        </section>
+    </header>
+    </div>
+
+    <main>
+        <h2 style="text-align: center; color: #ffffff; margin-bottom: 20px;">Tabela de preços - Canecas personalizadas
+        </h2>
+
+        <div style="display:flex; align-items:center; justify-content:center; gap:40px;">
+
+            <div class="canecasss-a">
+                <img src="./Images/caneca.jpg" alt="Caneca" width="200" style="float: left;">
+            </div>
+
+            <table border="1"
+                style="background-color: #d9ab4e; color: black; border-collapse:collapse; text-align:center; font-weight: bold; margin: 10px;">
+
+                <tr>
+                    <th>Quantidade</th>
+                    <th>Caneca branca</th>
+                    <th>Caneca polimero</th>
+                    <th>Caneca colorida</th>
+                </tr>
+
+                <tr>
+                    <td>1 unidade</td>
+                    <td>R$ 20</td>
+                    <td>R$ 30</td>
+                    <td>R$ 40</td>
+                </tr>
+
+                <tr>
+                    <td>5 unidades</td>
+                    <td>R$ 18</td>
+                    <td>R$ 28</td>
+                    <td>R$ 35</td>
+                </tr>
+
+                <tr>
+                    <td>10 unidades</td>
+                    <td>R$ 15</td>
+                    <td>R$ 38</td>
+                    <td>R$ 33</td>
+                </tr>
+
+                <tr>
+                    <td>20+ unidades</td>
+                    <td>R$ 25</td>
+                    <td>R$ 35</td>
+                    <td>R$ 30</td>
+                </tr>
+
+            </table>
+
+        </div>
+    </main>
+
+    <div class="footer-canecas">
+    <footer class="hidden">
+
+        <div class="footer-left">
+            <img src="./Images/Imagem cab.png" alt="Selo" height="70" width="60">
+            <div>
+                <h2 style="color: white;">Selo Único</h2>
+                <p>Produtos personalizados com qualidade premium</p>
+            </div>
+        </div>
+
+        <div class="footer-direita">
+            <h3>Contato</h3>
+            <p>WhatsApp: (41) 98846-1590</p>
+            <p>Instagram: selo_unico25</p>
+            <p>Seg - Sex: 9h às 19h</p>
+            <p>Curitiba - PR</p>
+        </div>
+    </div>
+    </footer>
+
+    <a href="https://wa.me/5541988461590" class="whatsapp" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png">
+    </a>
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+        <h2 class="text-login">Entre com seu email</h2>
+
+        <input type="email" id="email" placeholder="Digite seu email">
+
+        <button type="button" onclick="entrar()">Entrar</button>
+
+        <span class="fechar" onclick="fecharModal()">X</span>
+
+</div>
+
+
+</body>
+
+</html>

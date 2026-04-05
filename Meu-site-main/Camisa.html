@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisas</title>
+    <link rel="shortcut icon" href="./Images/Sélo (16 x 16 cm).png" type="image/x-icon">
+    <link rel="stylesheet" href="seloestilo.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div style="margin-bottom: 300px;">
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img src="./Images/Imagem cab.png" alt="logo" height="120" width="100">
+            </a>
+
+            <button id="btnLogin" class="btn-login" onclick="verificarLogin()">Login</button>
+
+            <nav class="navbar">
+                <a href="#">Início</a>
+                <a href="#perso">Personalizados</a>
+                <a href="#Model">Modelos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#Contato">Contato</a>
+            </nav>
+
+            <div class="icons">
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar..." id="pesquisa">
+                    <img src="https://img.icons8.com/ios/30/ffffff/search--v1.png"
+                        onclick="abrirBusca()" style="cursor:pointer;">
+                </div>
+                <img width="30" height="30" src="https://img.icons8.com/dotty/30/ffffff/shopping-cart.png"
+                    alt="shopping-cart" />
+                <a href="https://wa.me/5541988461590?text=Oi%20quero%20fazer%20um%20pedido." target="_blank">
+                    <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/ffffff/whatsapp--v1.png"
+                        alt="whatsapp--v1" />
+                </a>
+                <a href="https://www.instagram.com/selo_unico25/">
+                    <img width="30" height="30" src="https://img.icons8.com/pulsar-line/30/ffffff/instagram-new.png"
+                        alt="instagram-new" />
+                </a>
+            </div>
+        </section>
+    </header>
+    </div>
+
+    <main>
+        <div style="display: flex; align-items: center; gap: 20px; justify-content: center;">
+
+            <div class="camisa img">
+            <img src="./Images/Camisa.jpg" width="200">
+            </div>
+            <div style="display:flex; gap:60px; margin-left: 30px;">
+                <ul style="color: white;">
+                    <li color: White;>
+                        <h2>Camisas de poliester</h2>
+                    </li>
+                    <li color: White;>
+                        <h2> de algodão</h2>
+                    </li>
+                    <li color: White;>
+                        <h2> 50% poliester e algodão</h2>
+                    </li>
+                </ul>
+
+                <ul style="color: white;">
+                    <li color: White;>
+                        <h2>Personalização</h2>
+                    </li>
+                    <li color: White;>
+                        <h2>Qualidade</h2>
+                    </li>
+                    <li color: White;>
+                        <h2>Premium</h2>
+                    </li>
+                </ul>
+            </div>
+    </main>
+
+    <div class="footer-canecas">
+    <footer class="hidden">
+
+        <div class="footer-left">
+            <img src="./Images/Imagem cab.png" alt="Selo" height="70" width="60">
+            <div>
+                <h2 style="color: white;">Selo Único</h2>
+                <p>Produtos personalizados com qualidade premium</p>
+            </div>
+        </div>
+
+        <div class="footer-direita">
+            <h3>Contato</h3>
+            <p>WhatsApp: (41) 98846-1590</p>
+            <p>Instagram: selo_unico25</p>
+            <p>Seg - Sex: 9h às 19h</p>
+            <p>Curitiba - PR</p>
+        </div>
+    </div>
+    </footer>
+
+    <a href="https://wa.me/5541988461590" class="whatsapp" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png">
+    </a>
+
+<div id="modal" class="modal">
+
+<div class="modal-content">
+        <h2 class="text-login">Entre com seu email</h2>
+
+        <input type="email" id="email" placeholder="Digite seu email">
+
+        <button type="button" onclick="entrar()">Entrar</button>
+
+        <span class="fechar" onclick="fecharModal()">X</span>
+
+</div>
+
+</body>
+
+</html>

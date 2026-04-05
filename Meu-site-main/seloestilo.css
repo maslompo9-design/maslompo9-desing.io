@@ -1,0 +1,774 @@
+:root {
+    --main-color: #d9ab4e;
+    --black: #000000;
+    --bg: #13131a;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: capitalize;
+}
+
+body {
+    background-color: var(--bg);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.produtcs {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+    padding: 50px;
+    background-color: #111;
+}
+
+.beneficio {
+    text-align: center;
+    color: white;
+
+    max-width: 200px;
+}
+
+.beneficio h3 {
+    color: var(--main-color);
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.beneficio p {
+    font-size: 14px;
+}
+
+.beneficio:hover {
+    transform: scale(1.05);
+}
+
+.como-funciona {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.como-funciona h2 {
+    color: var(--main-color);
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.passos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.passo {
+    max-width: 200px;
+}
+
+.passo h3 {
+    color: var(--main-color);
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.passo p {
+    font-size: 15px;
+}
+
+.passo:hover {
+    transform: scale(1.05);
+}
+
+
+.produtos {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    border: var(--main-color);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.produtos:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 0 20px rgba(217, 171, 78, 0.5);
+}
+
+.produtosbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nomespr {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.cta-final {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #111;
+    color: white;
+}
+
+.cta-final h2 {
+    color: var(--main-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.cta-final p {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.cta-final button {
+    background-color: var(--main-color);
+    color: black;
+
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta-final button:hover {
+    transform: scale(1.08);
+}
+
+footer {
+    background-color: var(--bg);
+    border-top: 1px solid white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.footer-left {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.footer-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+
+    background-color: #222;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.footer-center p::after {
+    content: ".";
+    animation: pontos 1.5s infinite;
+}
+
+@keyframes pontos {
+    0% {
+        content: ".";
+    }
+
+    33% {
+        content: "..";
+    }
+
+    66% {
+        content: "...";
+    }
+}
+
+.footer-direita {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.footer-direita p,
+.footer-direita h3 {
+    text-align: left;
+}
+
+footer p:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+main {
+    height: 100%;
+}
+
+.home_container {
+    width: 100%;
+    margin-top: 130px;
+}
+
+.produtcss {
+    padding: 70px;
+}
+
+li {
+    font-size: 22px;
+}
+
+.faixa {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.faixa h2 {
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+.faixa p {
+    font-size: 17px;
+}
+
+.faixa button {
+    background-color: var(--main-color);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 200px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.faixa button:hover {
+    transform: scale(1.05);
+    background-color: #c89a3c;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp img {
+    width: 60px;
+    transition: 0.3s;
+}
+
+.whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+.camisa img {
+    border-radius: 15px;
+}
+
+.canecasss-a img {
+    border-radius: 50px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1a1a22;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.text-login {
+    text-transform: none;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-content {
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-content {
+    background-color: #1a1a22;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.modal-content h2 {
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+
+    border-radius: 10px;
+    border: none;
+
+    background-color: #2a2a35;
+    color: white;
+}
+
+.modal-content input:focus {
+    outline: 2px solid var(--main-color);
+}
+
+.modal-content button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+
+    background-color: var(--main-color);
+    color: black;
+
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-content button:hover {
+    transform: scale(1.05);
+    background-color: #c89a3c;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fechar:hover {
+    color: var(--main-color);
+}
+
+.btn-login {
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--main-color);
+
+    padding: 8px 20px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.btn-login {
+    margin-left: 15px;
+}
+
+.btn-login {
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden,
+.show {
+    transition: 0.6s ease;
+}
+
+.footer-canecas {
+    margin-top: 200px;
+}
+
+/* ===== FORMULÁRIO GARRAFAS ===== */
+
+.form-container {
+    max-width: 350px;
+    margin: 100px auto;
+    background-color: #1a1a22;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.form-container h2 {
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin-right: 23px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+
+    border-radius: 8px;
+    border: none;
+
+    background-color: #2a2a35;
+    color: white;
+    font-size: 12px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 2px solid var(--main-color);
+}
+
+.opcoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.buttonn {
+    width: 100%;
+    padding: 12px;
+
+    background-color: var(--main-color);
+    color: black;
+
+    border: none;
+    border-radius: 10px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* ===== LUPA ===== */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+/* input escondido */
+.search-box input {
+    width: 0;
+    opacity: 0;
+
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+
+    background-color: #2a2a35;
+    color: white;
+
+    transition: 0.4s;
+}
+
+/* quando abre */
+.search-box.ativo input {
+    width: 150px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.search-box input:focus {
+    outline: 2px solid var(--main-color);
+}
+
+/* ====CELULAR==== */
+
+@media (max-width: 768px) {
+
+    @media (max-width: 768px) {
+
+
+
+        .header section {
+            gap: 5px;
+        }
+
+        .logo img {
+            height: 70px;
+            width: 60px;
+        }
+
+    }
+
+    .btn-login {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .icons {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .faixa button {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .produtosbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .produtos {
+        width: 100%;
+        height: auto;
+    }
+
+    .beneficios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* 2 por linha */
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .beneficio h3 {
+        font-size: 16px;
+        color: var(--main-color);
+    }
+
+    .beneficio p {
+        font-size: 13px;
+    }
+
+    .passos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .passo {
+        background-color: #1a1a1a;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        max-width: 400px;
+        margin: 0 auto;
+        transition: 0.3s;
+    }
+
+    .passo h3 {
+        color: var(--main-color);
+        margin-bottom: 5px;
+    }
+
+    .passo:hover {
+        transform: scale(1.03);
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .footer-left {
+        margin-bottom: 15px;
+    }
+
+    .footer-center {
+        margin: 15px 0;
+        background-color: #1a1a1a;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+        position: static;
+        transform: none
+    }
+
+    .footer-direita h3 {
+        color: var(--main-color);
+        margin-bottom: 8px;
+    }
+
+    .footer-direita p {
+        font-size: 13px;
+        margin: 2px 0;
+    }
+
+    .footer-left img {
+        height: 50px;
+        width: 40px;
+    }
+
+}
