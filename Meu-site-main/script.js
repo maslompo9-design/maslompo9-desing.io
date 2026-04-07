@@ -38,7 +38,7 @@ function verificarLogin() {
     }
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     let modal = document.getElementById("modal");
 
     if (event.target === modal) {
@@ -110,3 +110,23 @@ function abrirBusca() {
     let box = document.querySelector(".search-box");
     box.classList.toggle("ativo");
 }
+
+const botao = document.querySelector(".whatsapp");
+const footer = document.querySelector("footer");
+
+window.addEventListener("scroll", function () {
+
+    if (window.innerWidth <= 768) {
+
+        const posicaoFooter = footer.getBoundingClientRect();
+
+        if (posicaoFooter.top < window.innerHeight) {
+            botao.style.position = "fixed";
+            botao.style.bottom = "200px";
+        } else {
+            botao.style.position = "fixed";
+            botao.style.bottom = "20px";
+        }
+
+    }
+});
