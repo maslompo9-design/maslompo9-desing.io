@@ -1,0 +1,67 @@
+:root {
+    --main-color: #d9ab4e;
+    --black: #000000;
+    --bg: #13131a;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+.caanecas {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.caanecasbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.canecas-card {
+    background-color: #232327;
+    padding: 20px;
+    border-radius: 15px;
+    width: 281px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.canecas-card:hover {
+    transform: scale(1.05);
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.canecas-card button {
+    background-color: var(--main-color);
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.canecas-card button:hover {
+    background-color: #b8923f;
+    transform: scale(1.05);
+}
+
+.canecas-card h1 {
+    color: var(--main-color);
+}
+
+.canecas-card p {
+    color: white;
+    padding: 5px;
+    margin-bottom: 3px;
+    font-size: 15px;
+}
